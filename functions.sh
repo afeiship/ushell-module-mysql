@@ -1,12 +1,21 @@
 #!/usr/bin/env bash
 
 function usm_mysql_udpate_password() {
-  root_path=$(dirname $BASH_SOURCE);
-  cat $root_path/data/update_password.txt;
+  echo "
+  >mysql -u root -p
+  use msyql;
+  select host, user from user;
+  update user set host = '%' where user = 'root';
+  FLUSH PRIVILEGES;
+  ";
 }
 
 
 function usm_mysql_update_remote() {
-  root_path=$(dirname $BASH_SOURCE);
-  cat $root_path/data/udpate_to_remote.txt;
+  echo "
+  >mysql -u root -p
+  use msyql;
+  GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'MYPASSWORD*!!#' WITH GRANT OPTION;
+  FLUSH PRIVILEGES;
+  ";
 }
