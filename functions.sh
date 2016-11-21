@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
-ROOT_PATH=$(dirname $BASH_SOURCE);
+
 function usm_mysql_udpate_password() {
-  cat $ROOT_PATH/data/update_password.txt;
+  root_path=$(dirname $BASH_SOURCE);
+  cat $root_path/data/update_password.txt;
 }
 
 
 function usm_mysql_update_remote() {
-  cat $ROOT_PATH/data/udpate_to_remote.txt;
+  root_path=$(dirname $BASH_SOURCE);
+  cat $root_path/data/udpate_to_remote.txt;
 }
-
-
-unset ROOT_PATH;
