@@ -20,8 +20,8 @@ if [[ $USM_OS_TYPE==centos ]]; then
   alias mysql-resetpwd='mysql_secure_installation';
   alias mysql-data='cd /var/lib/mysql';
   alias mysql-login='mysql -u root -p';
-  alias mysql-update-to-remote='mysql_update_to_remote()';
-  alias mysql-udpate-password='usm_mysql_udpate_password()';
+  alias mysql-update-to-remote='usm_mysql_update_remote';
+  alias mysql-udpate-password='usm_mysql_udpate_password';
 fi
 
 unset ROOT_PATH;
