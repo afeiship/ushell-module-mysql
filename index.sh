@@ -24,4 +24,8 @@ if [[ $USM_OS_TYPE==centos ]]; then
   alias mysql-udpate-password='usm_mysql_udpate_password';
 fi
 
+
+# brew install mysql@5.6
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH";
+
 unset ROOT_PATH;
