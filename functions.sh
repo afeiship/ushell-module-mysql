@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function usm_mysql_udpate_password() {
+function usm_mysql_update_password() {
   echo "
   >mysql -u root -p
   use msyql;

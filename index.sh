@@ -21,7 +21,7 @@ if [[ $USM_OS_TYPE==centos ]]; then
   alias mysql-data='cd /var/lib/mysql';
   alias mysql-login='mysql -u root -p';
   alias mysql-update-to-remote='usm_mysql_update_remote';
-  alias mysql-udpate-password='usm_mysql_udpate_password';
+  alias mysql-update-password='usm_mysql_update_password';
 fi
 
 
