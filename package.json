@@ -1,11 +1,11 @@
 {
-  "name": "ushell-module-mysql",
-  "version": "0.0.1",
+  "name": "@jswork/ushell-module-mysql",
+  "version": "1.0.0",
   "description": "Unix like shell module for mysql.",
   "main": "index.sh",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/afeiship/ushell-module-mysql.git"
+    "url": "https://github.com/afeiship/ushell-module-mysql.git"
   },
   "keywords": [
     "ushell",
@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/afeiship/ushell-module-mysql/issues"
   },
-  "homepage": "https://github.com/afeiship/ushell-module-mysql#readme"
+  "homepage": "https://js.work",
+  "scripts": {
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "^14.11.8"
+  }
 }
