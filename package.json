@@ -1,6 +1,6 @@
 {
   "name": "@jswork/ushell-module-mysql",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unix like shell module for mysql.",
   "main": "index.sh",
   "repository": {
@@ -9,10 +9,8 @@
   },
   "keywords": [
     "ushell",
-    "unix",
-    "shell",
-    "system",
-    "infomation"
+    "mysql",
+    "unix"
   ],
   "author": "afei",
   "license": "MIT",
